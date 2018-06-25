@@ -1,0 +1,115 @@
+/* 重置默认样式 */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* 红色提示信息颜色 */
+.red {
+  color: #A94442;
+}
+html,body{
+  height: 100%;
+  background-color: #222D32;
+
+}
+
+/*侧边栏*/
+.lt_aside{
+  width: 180px;
+  height: 100%;
+  background-color: #222D32;
+  position: fixed;
+  text-align: center;
+  z-index:666;
+}
+/*侧边栏隐藏*/
+.lt_aside.hidemenu{
+  transition:all 1s;
+  left:-180px;
+}
+.brand{
+  height: 50px;
+  font-size: 25px;
+  line-height: 50px;
+  color: #fff;
+  background-color: #367FA9;
+
+
+}
+
+.user{
+  margin-top: 15px;
+  height: 180px;
+}
+.user img{
+  width: 80px;
+  height: 80px;
+  border-radius:50%;
+}
+.user p{
+  font-size: 20px;
+  color: #fff;
+  margin-top: 5px;
+}
+.nav a{
+  display:block;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+}
+.nav a.current{
+  border-left:3px solid #006699;
+  background-color: #1D1F21;
+}
+/*头部*/
+.lt_main{
+  /*padding-left: 180px;*/
+  background:pink;
+  height: 100%;
+ }
+.lt_header{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #367FA9;
+  padding-left: 180px;
+}
+.lt_header a{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 55px;
+
+}
+.lt_header i{
+  color: #fff;
+  font-size: 20px;
+
+}
+.lt_content{
+  padding-left: 180px;
+  padding-top: 50px;
+}
+
+/*登录界面*/
+
+.panel .panel-heading {
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  padding: 0;
+  text-align: center;
+}
+.mt_150{
+  margin-top: 150px;
+}
+
