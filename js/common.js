@@ -14,6 +14,7 @@ if(location.href.indexOf("login.html")===-1){
    success:function(info){
      if(info.error===400){
        //当前用户没有登录,拦截到登录页
+       console.log(1)
        location.href="login.html";
      }
      if(info.success){
