@@ -18,7 +18,7 @@ if(location.href.indexOf("login.html")===-1){
      }
      if(info.success){
     //当前用户已经登录,不需要拦截,啥事都不用干,让用户访问页面即可
-       alert("当前用户已登录")
+    //   alert("当前用户已登录")
      }
    }
 
