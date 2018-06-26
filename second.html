@@ -18,7 +18,7 @@
   </div>
   <div class="nav">
     <ul>
-      <li class="one"><a href="user.html" class="current">
+      <li class="one"><a href="user.html" >
         <i class="glyphicon glyphicon-user"></i>
         <span>用户管理</span>
       </a></li>
@@ -27,12 +27,12 @@
           <i class="glyphicon glyphicon-list"></i>
           <span>分类管理</span>
         </a>
-        <ul class="slideDown">
+        <ul class="slideDown" style="display:block">
           <li>
             <a href="first.html">一级分类</a>
           </li>
-          <li>
-            <a href="second.html">二级分类</a>
+          <li >
+            <a href="second.html" class="current">二级分类</a>
           </li>
         </ul>
       </li>
@@ -43,9 +43,8 @@
     </ul>
   </div>
 </div>
-<!--主体-->
+<!--头部header-->
 <div class="lt_main">
-  <!--主体头部-->
   <div class="lt_header">
     <a href="#" class="pull-left icon_menu">
       <i class="glyphicon glyphicon-align-justify"></i>
@@ -54,16 +53,13 @@
       <i class="glyphicon glyphicon-log-out"></i>
     </a>
   </div>
-  <!--主体内容-->
   <div class="lt_content">
     <div class="container-fluid">
       <ol class="breadcrumb">
         <li><a href="index.html">管理系统</a></li>
-        <li class="active">首页</li>
+        <li >分类管理</li>
+        <li class="active">二级分类</li>
       </ol>
-      <!--表图部分-->
-      <div  class="EChart_1 pull-left"></div>
-      <div  class="EChart_2 pull-right"></div>
     </div>
   </div>
 </div>
@@ -86,12 +82,8 @@
     </div>
   </div>
 </div>
-
-
-
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="./lib/echarts/echarts.min.js"></script>
 <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
 <script src="./lib/nprogress/nprogress.js"></script>
 <script src="./js/common.js"></script>

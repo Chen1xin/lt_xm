@@ -18,11 +18,11 @@
   </div>
   <div class="nav">
     <ul>
-      <li class="one"><a href="user.html" class="current">
+      <li><a href="user.html" class="current">
         <i class="glyphicon glyphicon-user"></i>
         <span>用户管理</span>
       </a></li>
-      <li >
+      <li>
         <a href="#" class="slide">
           <i class="glyphicon glyphicon-list"></i>
           <span>分类管理</span>
@@ -30,22 +30,19 @@
         <ul class="slideDown">
           <li>
             <a href="first.html">一级分类</a>
-          </li>
-          <li>
             <a href="second.html">二级分类</a>
           </li>
         </ul>
       </li>
-      <li class="one"><a href="product.html" >
+      <li><a href="product.html">
         <i class="glyphicon glyphicon-tags"></i>
         <span>商品管理</span>
       </a></li>
     </ul>
   </div>
 </div>
-<!--主体-->
+<!--头部header-->
 <div class="lt_main">
-  <!--主体头部-->
   <div class="lt_header">
     <a href="#" class="pull-left icon_menu">
       <i class="glyphicon glyphicon-align-justify"></i>
@@ -54,16 +51,29 @@
       <i class="glyphicon glyphicon-log-out"></i>
     </a>
   </div>
-  <!--主体内容-->
   <div class="lt_content">
     <div class="container-fluid">
       <ol class="breadcrumb">
         <li><a href="index.html">管理系统</a></li>
-        <li class="active">首页</li>
+        <li class="active">用户管理</li>
       </ol>
-      <!--表图部分-->
-      <div  class="EChart_1 pull-left"></div>
-      <div  class="EChart_2 pull-right"></div>
+      <!--添加表格-->
+      <table class="table table-bordered table-hover ">
+        <thead>
+        <tr>
+          <th width="10">序号</th>
+          <th width="20">用户名</th>
+          <th width="30">手机号</th>
+          <th width="20">状态</th>
+          <th width="20">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <!--挖个坑-->
+        </tbody>
+      </table>
+
     </div>
   </div>
 </div>
@@ -87,13 +97,27 @@
   </div>
 </div>
 
-
-
+<!--模板引擎-->
+<script type="text/html" id="tmp">
+  {{each rows v i}}
+    <tr>
+      <td>1</td>
+      <td>itcast</td>
+      <td>15102324243</td>
+      <td>正常</td>
+      <td>
+        <button class="btn btn-danger">禁用</button>
+        <button class="btn btn-success">启用</button>
+      </td>
+    </tr>
+  {{/each}}
+</script>
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="./lib/echarts/echarts.min.js"></script>
 <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
 <script src="./lib/nprogress/nprogress.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/common.js"></script>
+<script src="./js/user.js"></script>
 </body>
 </html>
